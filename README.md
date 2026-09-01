@@ -27,7 +27,7 @@ Get the prior in one of two ways:
 
 - **Download it** from this [anonymous Google Drive folder](https://drive.google.com/drive/folders/1bJGhHVUo_fgY_Bj21H0HVkJNtCewk3GW?usp=sharing).
 - **Generate it** with the pipeline in `synthetic_generation/`, then convert it with
-  `convert_prior/convert_prior.py`:
+  `convert_prior/convert_prior.py`. From `convert_prior/`:
 
   ```bash
   python convert_prior.py --csv "<path>/m3_yearly_200.csv" --out prior/
@@ -91,12 +91,14 @@ Run `python inference.py --help` for the full list.
 ## Statistical comparison
 
 `stat_comparison/M3_yearly.ipynb` runs the statistical baselines on the same M3
-yearly series. See [`stat_comparison/README.md`](stat_comparison/README.md).
+yearly series. It uses `statsforecast`, which is included in `environments.txt`.
+See [`stat_comparison/README.md`](stat_comparison/README.md).
 
 ## GIFT-Eval
 
 1. Clone the [GIFT-Eval repository](https://github.com/SalesforceAIResearch/gift-eval)
-   and follow its setup, including the `GIFT_EVAL` entry in `.env`.
+   and follow its setup, including the `GIFT_EVAL` entry in `.env`. The notebook
+   reads `.env` with `python-dotenv`, which is included in `environments.txt`.
 2. Copy `gift-eval/GRAIN.ipynb` into GIFT-Eval's `notebooks/` folder.
 3. In the notebook's configuration cell, point `CODE_DIR` and `WEIGHTS` at this
    repository's `train_and_inference/` folder and `train_and_inference/model.ckpt`.

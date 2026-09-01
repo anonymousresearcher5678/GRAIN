@@ -15,13 +15,10 @@ the results can be compared with GRAIN directly.
 
 ## Setup
 
-```bash
-pip install statsforecast
-```
+`statsforecast` is installed by the root `environments.txt`.
 
-The notebook imports `eval_metrics` from `train_and_inference/`. Before running
-it, either copy `train_and_inference/eval_metrics.py` into this folder or add
-`../train_and_inference` to `sys.path`.
+The notebook imports `eval_metrics` from `../train_and_inference`, which it adds
+to `sys.path` itself, so run it from this folder.
 
 Each model writes its results to its own folder, for example
 `./autoETS/m3_yearly`.

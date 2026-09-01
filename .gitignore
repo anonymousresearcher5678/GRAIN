@@ -7,11 +7,18 @@ __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .pytest_cache/
+*.egg-info/
+.venv/
+venv/
 
 # R session files
 .Rhistory
 .RData
 .Rproj.user/
+# R Markdown knit output
+synthetic_generation/*.html
+synthetic_generation/*_cache/
+synthetic_generation/*_files/
 
 # OS / editor
 .DS_Store
