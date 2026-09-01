@@ -1,0 +1,40 @@
+# Secrets
+.env
+.env.*
+
+# Python / Jupyter caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# R session files
+.Rhistory
+.RData
+.Rproj.user/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated prior (download or regenerate; see README)
+synthetic_generation/*.csv
+convert_prior/*.csv
+convert_prior/prior/
+train_and_inference/prior/
+
+# Training runs
+train_and_inference/runs/
+lightning_logs/
+
+# Inference and baseline outputs
+train_and_inference/grain/
+stat_comparison/autoTheta/
+stat_comparison/autoETS/
+stat_comparison/autoARIMA/
+stat_comparison/seasonal_naive/
+stat_comparison/naive/
+
+*.log
