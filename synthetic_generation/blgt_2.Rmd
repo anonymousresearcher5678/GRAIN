@@ -683,11 +683,11 @@ message("Starting synthetic dataset generation at: ", format(start_time, "%Y-%m-
 synthetic_m3_yearly <- generate_synthetic_dataset_fixed(
   data = m3_yearly_train_data,
   n_synthetic = 200, #length
-  n_scenarios = 20, # number of different series
+  n_scenarios = 250, # number of different series
   frequency = 1,
   parallel = TRUE,  # Use parallel for speed
   n_cores = 5,
-  first_fraction = 1 # 1 all start of year 0.5 half half 0 all end of year 
+  first_fraction = 0 # 1 all start of year 0.5 half half 0 all end of year 
 )
 
 
