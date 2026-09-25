@@ -1,7 +1,7 @@
 # Synthetic time series generation
 
 Generates synthetic time series with a Bayesian Local Global Trend (BLGT) model
-fitted to benchmark forecasting datasets (M3, M4) from the
+fitted to benchmark forecasting datasets (M3) from the
 [Monash Time Series Forecasting Archive](https://forecastingdata.com/).
 
 ## Requirements
