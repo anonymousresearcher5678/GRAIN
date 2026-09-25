@@ -41,7 +41,7 @@ install.packages(c("Rlgt", "forecast", "tidyverse", "moments", "ggplot2"))
 
 ## Output
 
-One CSV per frequency, each with 200 generated series. For yearly data:
+A csv for us to convert to prior. It contains 250 synthetic series for each generated series, they are all in length of 200. Resulting in 645*250 = 161,250 series.
 
 ```
 m3_yearly_200.csv
